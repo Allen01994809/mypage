@@ -6,13 +6,11 @@ const exampleSketch = (p5: p5) => {
     HEIGHT: 800,
   };
 
-  const points = new Array(900).fill(0).map(() => {
-    const randomTheta = Math.random() * Math.PI * 2;
-    const randomPosition = (1 - Math.random() * Math.random());
+  const points = new Array(2000).fill(0).map(() => {
     return {
       position: p5.createVector(
-        (Math.cos(randomTheta) * CANVAS_META.WIDTH / 2) * randomPosition + CANVAS_META.WIDTH / 2,
-        (Math.sin(randomTheta) * CANVAS_META.HEIGHT / 2) * randomPosition + CANVAS_META.HEIGHT / 2 + 500,
+        Math.random() * CANVAS_META.WIDTH,
+        Math.random() * CANVAS_META.HEIGHT,
       ),
       color: [
         100 * Math.random(), // 色相
@@ -31,16 +29,19 @@ const exampleSketch = (p5: p5) => {
 
   p5.draw = () => {
     p5.background(250);
-    points.forEach((val) => {
+    points.forEach((val, index) => {
+
       val.position.set((val.position.x + CANVAS_META.WIDTH) % CANVAS_META.WIDTH, (CANVAS_META.HEIGHT + val.position.y) % CANVAS_META.HEIGHT)
-      val.position.add(0, -2);
+      val.position.add(Math.sin(Date.now() / 1000 + index / 30) - 0.2, -2);
+
+      const group = index % 2;
       val.position.add(
-        (p5.noise(val.position.x / 50, val.position.y / 50) - 0.5) * 2,
-        (p5.noise(val.position.x / 50 + 0.0009765625, val.position.y / 50 + 0.0009765625) - 0.5) * 10,
+        (p5.noise(val.position.x / 50, val.position.y / 50, group) - 0.5) * 2,
+        (p5.noise(val.position.x / 50 + 0.0009765625, val.position.y / 50 + 0.0009765625, group) - 0.5) * 10,
       );
 
       p5.fill(val.color);
-      p5.ellipse(val.position.x, val.position.y, 10, 10);
+      p5.ellipse(val.position.x, val.position.y, 6, 6);
 
     });
   };
