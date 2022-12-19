@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "deploy": "tsc && vite build --base=/mypage",
     "preview": "vite preview"
   },
   "dependencies": {
