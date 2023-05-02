@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@tanstack/react-query": "^4.29.5",
+    "@vercel/edge-config": "^0.1.9",
     "next": "^13.3.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
