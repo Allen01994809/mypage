@@ -12,15 +12,15 @@ describe("<Button />", () => {
     expect(asFragment()).toMatchSnapshot()
   })
 
-  test('成功ケースのテスト', () => {
+  test("成功ケースのテスト", () => {
     render(<TemplateName {...TemplateNameMockProps} />)
-    const element = screen.getByTestId('template-name');
-    expect(element.innerHTML).toBe('template-name Component');
+    const element = screen.getByTestId("template-name")
+    expect(element.innerHTML).toBe("template-name Component")
   })
 
-  test('失敗ケースのテスト', () => {
+  test("失敗ケースのテスト", () => {
     render(<TemplateName {...TemplateNameMockProps} />)
-    const element = screen.getByTestId('template-name');
-    expect(element.innerHTML).toBe('test');
+    const element = screen.getByTestId("template-name")
+    expect(element.innerHTML).toBe("test")
   })
 })

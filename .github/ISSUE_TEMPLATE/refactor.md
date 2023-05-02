@@ -1,10 +1,12 @@
 ---
 name: リファクタ
 about: リファクタ用
-title: '[リファクタ] '
+title: "[リファクタ] "
 labels: refactor
 assignees:
 ---
+
+<!-- @format -->
 
 ## 内容
 

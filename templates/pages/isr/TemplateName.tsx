@@ -8,7 +8,7 @@ interface ITemplateName {
 }
 
 const TemplateName: FC<ITemplateName> = () => {
-  return <></>;
+  return <></>
 }
 
 /* pathが固定の場合は削除する */

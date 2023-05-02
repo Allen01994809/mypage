@@ -2,7 +2,7 @@
 
 import React, { FC } from "react"
 import { TemplateNameProps } from "./types"
-import styles from './index.module.scss';
+import styles from "./index.module.scss"
 // import { useTemplateName } from './uses';
 
 const TemplateName: FC<TemplateNameProps> = (props) => {

@@ -68,14 +68,14 @@ SSIA
 
 ### 生成タイプの選択
 
-4通りの手段が選択できます。
+4 通りの手段が選択できます。
 
 - ISR
 - SSR
 - SSG
 - API
 
-[【Next.js】CSR,SSG,SSR,ISRがあやふやな人へざっくり解説する](https://zenn.dev/akino/articles/78479998efef55#ssr%EF%BC%88%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%82%B5%E3%82%A4%E3%83%89%E3%83%AC%E3%83%B3%E3%83%80%E3%83%AA%E3%83%B3%E3%82%B0%EF%BC%89)
+[【Next.js】CSR,SSG,SSR,ISR があやふやな人へざっくり解説する](https://zenn.dev/akino/articles/78479998efef55#ssr%EF%BC%88%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%82%B5%E3%82%A4%E3%83%89%E3%83%AC%E3%83%B3%E3%83%80%E3%83%AA%E3%83%B3%E3%82%B0%EF%BC%89)
 
 ### 生成パスの入力
 

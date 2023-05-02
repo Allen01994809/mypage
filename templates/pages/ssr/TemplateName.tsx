@@ -7,7 +7,7 @@ interface ITemplateName {
 }
 
 const TemplateName: FC<ITemplateName> = () => {
-  return <></>;
+  return <></>
 }
 
 export const getStaticProps: GetServerSideProps<ITemplateName> = async (_context) => {

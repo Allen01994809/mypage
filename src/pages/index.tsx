@@ -13,4 +13,4 @@ export const getStaticProps: GetStaticProps = async () => {
   }
 }
 
-export default TemplateName;
+export default TemplateName
