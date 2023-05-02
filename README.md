@@ -1,5 +1,9 @@
 <!-- @format -->
 
+## vercel postgres sql
+
+https://vercel.com/dashboard/stores/edge-config/ecfg_2ldsmdq7lo2jpoxqu5qz05loyfew/items
+
 # example-template
 
 `npx create-next-app --example  https://github.com/yumemi-inc/frontend-nextjs-template <YOUR_APP_NAME>`
